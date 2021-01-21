@@ -1,5 +1,5 @@
-<h1>Home Page</h1>
+<?php require APPROOT . '/views/inc/header.php'; ?>
 
 <h2><?= $data['title']; ?></h2>
 
-<h3><?= APPROOT; ?></h3>
+<?php require APPROOT . '/views/inc/footer.php'; ?>
