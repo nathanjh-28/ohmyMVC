@@ -1,8 +1,12 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
+<div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+        <h1 class="display-3"><?= $data['title']; ?></h1>
+        <p class="lead"><?= $data['description'];?></p>
+    </div>
+</div>
 
-<h1><?= $data['title']; ?></h1>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores explicabo fugit libero officiis minus accusantium officia dolore perspiciatis doloremque non sit, tenetur, optio expedita error.</p>
 
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>
