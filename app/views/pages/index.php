@@ -1,13 +1,8 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
 
-<h2><?= $data['title']; ?></h2>
+<h1><?= $data['title']; ?></h1>
 
-<ul>
-    <?php foreach($data['posts'] as $post): ?>
-    <li><?= $post->title;?></li>
+<p>This is the Oh My MVC PHP framework.  Please refer to the docs on how to get started.</p>
 
-
-    <?php endforeach; ?>
-</ul>
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>
