@@ -11,7 +11,7 @@ class Pages extends Controller
 
     {
         $data = [
-            'title' => 'Oh My MVC',
+            'title' => 'Share Posts',
         ];
 
         $this->view('pages/index', $data);

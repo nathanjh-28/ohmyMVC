@@ -2,7 +2,7 @@
 
 <h1><?= $data['title']; ?></h1>
 
-<p>This is the Oh My MVC PHP framework.  Please refer to the docs on how to get started.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores explicabo fugit libero officiis minus accusantium officia dolore perspiciatis doloremque non sit, tenetur, optio expedita error.</p>
 
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>
