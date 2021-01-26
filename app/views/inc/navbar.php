@@ -15,12 +15,21 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto mb-2 mb-md-0">
+                <?php if(isset($_SESSION['user_id'])): ?>
+                <!-- logout -->
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="<?= URLROOT;?>/users/logout">Logout</a>
+                </li>
+
+                <?php else : ?>
+
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="<?= URLROOT;?>/users/register">Register</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?= URLROOT;?>/users/login">Login</a>
                 </li>
+                <?php endif;?>
             </ul>
         </div>
     </div>
