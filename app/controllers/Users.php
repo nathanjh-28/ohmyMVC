@@ -44,7 +44,7 @@
             } elseif(strlen($data['password']) < 6){
                 $data['password_err'] = 'Password must be at least 6 characters';
             }
-            //Validate Password
+            //Validate Confirm Password
             if (empty($data['confirm_password'])) {
                 $data['confirm_password_err'] = 'Please Confirm Password';
             }else {
@@ -62,6 +62,7 @@
 
                 //Register User
                 if($this->userModel->register($data)){
+                    flash('register_success','You are registered and can log in');
                     redirect('users/login');
 
                     
