@@ -124,12 +124,29 @@
             } elseif(strlen($data['password']) < 6){
                 $data['password_err'] = 'Password must be at least 6 characters';
             }
+            // Check for user/email
+            if($this->userModel->findUserByEmail($data['email'])){
+                // user found
+
+            } else {
+                // User Not Found
+                $data['email_err'] = 'No User Found';
+            }
 
             // Make sure they are empty
 
             if(empty($data['email_err']) && empty($data['password_err'])){
                 // Validated
-                die('SUCCESS');
+                // Check and set logged in user
+                $loggedInUser = $this->userModel->login($data['email'],$data['password']);
+                if($loggedInUser){
+                    // Create Session Variables
+                    // die('successsssss');
+                } else {
+                    $data['password_err'] = 'Password Incorrect';
+                    $this->view('users/login',$data);
+                }
+                
             } else {
                 //Load View with errors
                 $this->view('users/login',$data);
