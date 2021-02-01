@@ -15,7 +15,7 @@
 
 <hr>
 
-<a href="<?= URLROOT;?>/posts/edit<?= $data['post']->id;?>" class="btn btn-dark">Edit</a>
+<a href="<?= URLROOT;?>/posts/edit/<?= $data['post']->id;?>" class="btn btn-dark">Edit</a>
 
 <form class="pull-right" action="<?= URLROOT;?>/posts/delete/<?=$data['post']->id;?>" method="post">
 <input type="submit" value="Delete" class="btn btn-danger">
