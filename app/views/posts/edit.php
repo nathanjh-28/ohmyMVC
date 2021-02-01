@@ -2,7 +2,7 @@
             <a href="<?=URLROOT;?>/posts" class="btn btn-light"><i class="fa fa-backward"></i> Back</a>
             <div class="card card-body bg-light mt-5">
             <h2>Edit Post</h2>
-            <p>Create a post with this form</p>
+            <p>Update a post with this form</p>
             <form method="post" action="<?=URLROOT;?>/posts/edit/<?= $data['id'];?>">
             
             <!-- Title -->

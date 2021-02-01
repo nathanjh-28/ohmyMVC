@@ -78,7 +78,7 @@ class Posts extends Controller
                 'body' => trim($_POST['body']),
                 'user_id'=>$_SESSION['user_id'],
                 'title_err'=> '',
-                'body_err'=> '',
+                'body_err'=> ''
             ];
 
             //Validate data
@@ -98,7 +98,6 @@ class Posts extends Controller
                     redirect(('posts'));
                 } else {
                     die('Something went wrong');
-
                 }
 
             }else {
