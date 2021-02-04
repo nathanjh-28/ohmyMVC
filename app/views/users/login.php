@@ -1,7 +1,7 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
     <div class="row">
         <div class="col-md-6 mx-auto">
-            <div class="card card-body bg-light mt-5">
+            <div class="form-layout">
             <?php flash('register_success'); ?>
             <h2>Login</h2>
             <p>Please fill in your credentials to login</p>
@@ -23,13 +23,13 @@
                 <span class="invalid-feedback"><?=$data['password_err'];?></span>
                 </div>
 
-                <div class="row">
-                    <div class="col">
-                        <input type="submit" value="Login" class="btn btn-success btn-block">
-                    </div>
-                    <div class="col">
-                        <a href="<?= URLROOT;?>/users/register" class="btn btn-light btn-block">Don't have an Account?  Register</a>
-                    </div>
+                <div class="form-buttons">
+
+                        <input type="submit" value="Login" class="btn light-blue-bg">
+
+
+                        <a href="<?= URLROOT;?>/users/register" class="btn">Don't have an Account?  Register</a>
+
                 </div>
 
             </form>

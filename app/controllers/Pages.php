@@ -12,7 +12,7 @@ class Pages extends Controller
     }
         $data = [
             'title' => 'Share Posts',
-            'description' => 'Simple social network built on the ohmy MVC framework.'
+            'description' => 'Simple social network built on a vanilla PHP framework.'
         ];
 
         $this->view('pages/index', $data);
@@ -20,8 +20,8 @@ class Pages extends Controller
     public function about()
     {
         $data = [
-            'title' => 'about',
-            'description' => 'App to share posts with other users.'
+            'title' => 'About',
+            'description' => 'An app to share posts with other users.'
         ];
         $this->view('pages/about', $data);
     }

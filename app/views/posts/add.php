@@ -1,12 +1,12 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
-            <a href="<?=URLROOT;?>/posts" class="btn btn-light"><i class="fa fa-backward"></i> Back</a>
+            
             <div class="card card-body bg-light mt-5">
             <h2>Add Post</h2>
             <p>Create a post with this form</p>
             <form method="post" action="<?=URLROOT;?>/posts/add">
             
             <!-- Title -->
-                <div class="form-group">
+                <div class="form-group form-group-post">
                 <label for="title">Title: <sup>*</sup></label>
                 <input type="text" name="title" id="" class="form-control form-control-lg 
                 <?php echo (!empty($data['title_err']))? 'is-invalid' : '' ;?>" value="<?= $data['title'];?>">
@@ -14,17 +14,19 @@
                 </div>
             
             <!-- Body -->
-                <div class="form-group">
+                <div class="form-group form-group-post">
                 <label for="body">Body: <sup>*</sup></label>
                 <textarea name="body" id="" class="form-control form-control-lg 
                 <?php echo (!empty($data['body_err']))? 'is-invalid' : '' ;?>"><?= $data['body'];?></textarea>
                 <span class="invalid-feedback"><?=$data['body_err'];?></span>
                 </div>
 
-                <div class="row">
-                    <div class="col">
+                <div class="post-footer">
+                    
+
+                    <a href="<?=URLROOT;?>/posts" class="btn light-blue-bg"><i class="fa fa-backward"></i> Back</a>
                         <input type="submit" value="Post" class="btn btn-success">
-                    </div>
+                    
 
                 </div>
 

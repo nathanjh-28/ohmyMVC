@@ -1,7 +1,7 @@
 <nav class="">
     <div class="nav-container">
-        <a class="" href="<?= URLROOT;?>"><?= SITENAME;?></a>
-        <div class="" id="">
+        <a class="nav-logo" href="<?= URLROOT;?>"><?= SITENAME;?></a>
+        <div class="links-container" id="">
             <ul class="">
                 <li class="">
                     <a class="nav-link" aria-current="page" href="<?= URLROOT;?>">Home</a>
@@ -9,11 +9,10 @@
                 <li class="">
                     <a class="nav-link" href="<?= URLROOT;?>/pages/about">About</a>
                 </li>
-            </ul>
-            <ul class="">
+
                 <?php if(isset($_SESSION['user_id'])): ?>
                 <li class="">
-                    <a class="nav-link" aria-current="page" href="#">Welcome <?= $_SESSION['user_name'];?></a>
+                    <a class="nav-link" aria-current="page" href="<?= URLROOT;?>/posts/add">Welcome <?= $_SESSION['user_name'];?></a>
                 </li>
                 <!-- logout -->
                 <li class="">

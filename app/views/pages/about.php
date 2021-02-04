@@ -1,8 +1,9 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
 
-
-<h1 class="display-3"><?= $data['title']; ?></h1>
-<p class="lead"><?= $data['description'];?></p>
-<p class="lead">Version <strong> <?= APPVERSION;?></strong></p>
+<div class="hero light-bg">
+    <h1 class=""><?= $data['title']; ?></h1>
+    <p class=""><?= $data['description'];?></p>
+    <p class="">Version <strong> <?= APPVERSION;?></strong></p>
+</div>
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>
