@@ -11,7 +11,7 @@ class Pages extends Controller
             redirect('posts');
     }
         $data = [
-            'title' => 'Share Posts',
+            'title' => SITENAME,
             'description' => 'Simple social network built on a vanilla PHP framework.'
         ];
 
