@@ -14,6 +14,7 @@ class Core
   {
     //print_r($this->getUrl());
     $url = $this->getUrl();
+    die(var_dump($url));
 
     // Look in controllers for first value
     if (file_exists('../app/controllers/' . ucwords($url[0]) . '.php')) {
