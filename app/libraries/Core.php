@@ -14,7 +14,7 @@ class Core
   {
     //print_r($this->getUrl());
     $url = $this->getUrl();
-    die(var_dump($url));
+    
 
     // Look in controllers for first value
     if (file_exists('../app/controllers/' . ucwords($url[0]) . '.php')) {
@@ -50,6 +50,7 @@ class Core
   public function getUrl()
   {
     if (isset($_GET['url'])) {
+      die(var_dump(isset($_GET['url'])));
       $url = rtrim($_GET['url'], '/');
       $url = filter_var($url, FILTER_SANITIZE_URL);
       $url = explode('/', $url);
