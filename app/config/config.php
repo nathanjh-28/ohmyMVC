@@ -9,7 +9,7 @@ define('DB_NAME','shareposts');
 // App Root
 define('APPROOT', dirname(dirname(__FILE__)));
 // URL Root
-define('URLROOT', 'http://localhost:8080/shareposts');
+define('URLROOT', 'https://post-it-harris.herokuapp.com/');
 // Site Name
 define('SITENAME', 'Post-It');
 //App Version
