@@ -7,11 +7,11 @@
 // define('DB_NAME','shareposts');
 
 //DB Params Prod Env
-define('CLEARDB_URL',parse_url(getenv("CLEARDB_DATABASE_URL")));
-define('DB_HOST',CLEARDB_URL["host"]);
-define('DB_USER',CLEARDB_URL["user"]);
-define('DB_PASS',CLEARDB_URL["pass"]);
-define('DB_NAME',substr(CLEARDB_URL["path"],1));
+define('DB_URL',parse_url(getenv("JAWSDB_URL")));
+define('DB_HOST',DB_URL["host"]);
+define('DB_USER',DB_URL["user"]);
+define('DB_PASS',DB_URL["pass"]);
+define('DB_NAME',substr(DB_URL["path"],1));
 
 
 // App Root
